@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Workplace Survey.css">
+    <title>Workplace Satisfaction Survey</title>
+</head>
+<body>
+    <section class="header">
+    <h1 id="title">Workplace Satisfaction Survey</h1>
+    <p id="description"> Please complete this suvey about your satisfaction at work.</p>
+    </section>
+
+    <form action="#" method="post" id="survey-form">
+
+        <label for="firstName" id="name-label"> Name:
+        <input type="text" id="name" name="firstName" placeholder="John Smith" required>
+        </label>
+
+        <label for="email" id="email-label">Email:
+        <input type="email" id="email" name="email" placeholder="JohnSmith@example.com" required>
+        </label>
+
+        <label for="age" id="number-label">Age:
+        <input type="number" id="number" name="age" min ="14" max="67" placeholder="25" required>
+        </label>
+
+        <label for="company" id="company-label">Company:
+        <input type="text" id="company" name="company" placeholder="Company LTD" required>
+        </label>
+
+        <label for="industry"id="industry-label">Industry:
+        <select  name="industry" id="dropdown">
+            <option value="IT">Information Technology</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Finance">Finance and Banking</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Retail">Retail</option>
+            <option value="Energy">Energy</option>
+            <option value="Education">Education</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Hospitality">Hospitality and Tourism</option>
+            <option value="Automotive">Automotive</option>
+        </select>
+        </label>
+
+        <label for="income">Annual Income:
+        <select id="income" name="income">
+            <option value="<18000">&lt;$18,000</option>
+            <option value="18001-45000">$18,001-$45,000</option>
+            <option value="45001-80000">$45,001-$80,000</option>
+            <option value="80001-120000">$80,001-$120,000</option>
+            <option value="120001-180000">$120,001-$180,000</option>
+            <option value="180001-250000">$180,001-$250,000</option>
+            <option value=">250000">&gt;$250,000</option>
+        </select>
+        </label>
+
+        <label for="position">Your Position:
+        <select id="position" name="position">
+            <option value="Board">Board of Directors</option>
+            <option value="Executive">Executive Team (C-Suite)</option>
+            <option value="Senior">Senior Management</option
+            <option value="Middle">Middle Management</option>
+            <option value="Junior">Junior Management</option>
+            <option value="TeamLeaders">Team Leaders/Supervisors</option>
+            <option value="Employees">Employees/Staff</option>
+            <option value="Intern">Intern</option>
+        </select>
+        </label>
+
+        <label for="satisfactionWork">Are you satisfied with the work you are doing? (1-10)
+        <input type="number" id="satisfactionWork" name="satisfactionWork" min="1" max="10" required>
+        </label>
+
+        <label for="satisfactionSalary">Are you satisfied with your salary? (1-10)
+        <input type="number" id="satisfactionSalary" name="satisfactionSalary" min="1" max="10" required>
+        </label>
+
+        <label for="satisfactionEnvironment">Are you satisfied with the workplace environment? (1-10)
+        <input type="number" id="satisfactionEnvironment" name="satisfactionEnvironment" min="1" max="10" required>
+        </label>
+        <label for="flexibleHours" class="checkbox">Do you have flexible working hours?
+        <input type="checkbox" id="flexibleHours" name="flexibleHours" value="flexibleHours">
+        </label>
+        
+        <label for="workFromHome" class="checkbox">Do you have the option to work from home?
+        <input type="checkbox" id="workFromHome" name="workFromHome" value="workFromHome">
+        </label>
+        
+        <label>How satisfied are you with the communication within the company?</label>
+        <div class="radio-button">
+            <input type="radio" id="communicationSatisfied" name="communicationSatisfaction" value="satisfied">
+            <label for="communicationSatisfied">Satisfied</label>
+        </div>
+        <div class="radio-button">
+            <input type="radio" id="communicationNeutral" name="communicationSatisfaction" value="neutral">
+            <label for="communicationNeutral">Neutral</label>
+        </div>
+        <div class="radio-button">
+            <input type="radio" id="communicationDissatisfied" name="communicationSatisfaction" value="dissatisfied">
+            <label for="communicationDissatisfied">Dissatisfied</label>
+        </div>
+
+      
+        <label>How would you rate the availability of professional development opportunities?</label>
+        <div class="radio-button">
+            <input type="radio" id="developmentExcellent" name="developmentRating" value="excellent">
+            <label for="developmentExcellent">Excellent</label>
+        </div>
+        <div class="radio-button">
+            <input type="radio" id="developmentGood" name="developmentRating" value="good">
+            <label for="developmentGood">Good</label>
+        </div>
+        <div class="radio-button">
+            <input type="radio" id="developmentFair" name="developmentRating" value="fair">
+            <label for="developmentFair">Fair</label>
+        </div>
+
+        <label for="improvements">What can be improved about your workplace?
+        <textarea id="improvements" name="improvements" placeholder="Enter your comments"></textarea>
+        </label>
+            
+        <input type="submit" id="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
