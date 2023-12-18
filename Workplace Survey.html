@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Workplace Survey.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Workplace Satisfaction Survey</title>
 </head>
 <body>
@@ -81,43 +81,47 @@
         <label for="satisfactionEnvironment">Are you satisfied with the workplace environment? (1-10)
         <input type="number" id="satisfactionEnvironment" name="satisfactionEnvironment" min="1" max="10" required>
         </label>
-        <label for="flexibleHours" class="checkbox">Do you have flexible working hours?
-        <input type="checkbox" id="flexibleHours" name="flexibleHours" value="flexibleHours">
+
+        <div class="recomendation">
+        <p> Would you recomend your workplace to somebody else?</p>
+        <label for="Definetley"> 
+            <input type="radio" id="definetley" name="definetley" value="no">
+            Definetley
         </label>
-        
-        <label for="workFromHome" class="checkbox">Do you have the option to work from home?
-        <input type="checkbox" id="workFromHome" name="workFromHome" value="workFromHome">
+        <label for="not-sure"> 
+            <input type="radio" id="not-sure" name="not sure" value="no">
+            Not Sure
         </label>
-        
-        <label>How satisfied are you with the communication within the company?</label>
-        <div class="radio-button">
-            <input type="radio" id="communicationSatisfied" name="communicationSatisfaction" value="satisfied">
-            <label for="communicationSatisfied">Satisfied</label>
-        </div>
-        <div class="radio-button">
-            <input type="radio" id="communicationNeutral" name="communicationSatisfaction" value="neutral">
-            <label for="communicationNeutral">Neutral</label>
-        </div>
-        <div class="radio-button">
-            <input type="radio" id="communicationDissatisfied" name="communicationSatisfaction" value="dissatisfied">
-            <label for="communicationDissatisfied">Dissatisfied</label>
+        <label for="no"> 
+            <input type="radio" id="no" name="no" value="no">
+            No
+        </label>
         </div>
 
-      
-        <label>How would you rate the availability of professional development opportunities?</label>
-        <div class="radio-button">
-            <input type="radio" id="developmentExcellent" name="developmentRating" value="excellent">
-            <label for="developmentExcellent">Excellent</label>
-        </div>
-        <div class="radio-button">
-            <input type="radio" id="developmentGood" name="developmentRating" value="good">
-            <label for="developmentGood">Good</label>
-        </div>
-        <div class="radio-button">
-            <input type="radio" id="developmentFair" name="developmentRating" value="fair">
-            <label for="developmentFair">Fair</label>
-        </div>
+        <div class="suggestions">
+            <p> What would you like to see improved</p>
+            <label for="Salary"> 
+            <input type="checkbox" id="Salary" name="Salary" value="Salary">
+            Salary
+            </label>
 
+            <label for="professional-development"> 
+            <input type="checkbox" id="professional-development" name="professional-development" value="professional-development">
+            Professional Development
+            </label>
+
+            <label for="resources"> 
+            <input type="checkbox" id="resources" name="resources" value="resources">
+            Resources
+            </label>
+
+            <label for="workspace"> 
+            <input type="checkbox" id="workspace" name="workspace" value="workspace">
+            Workspace
+            </label>
+        
+        </div>
+        
         <label for="improvements">What can be improved about your workplace?
         <textarea id="improvements" name="improvements" placeholder="Enter your comments"></textarea>
         </label>
