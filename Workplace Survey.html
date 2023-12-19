@@ -32,6 +32,7 @@
 
         <label for="industry"id="industry-label">Industry:
         <select  name="industry" id="dropdown">
+            <option value="" selected disabled>Select an Option</option>
             <option value="IT">Information Technology</option>
             <option value="Healthcare">Healthcare</option>
             <option value="Finance">Finance and Banking</option>
@@ -47,6 +48,7 @@
 
         <label for="income">Annual Income:
         <select id="income" name="income">
+            <option value="" selected disabled>Select an Option</option>
             <option value="<18000">&lt;$18,000</option>
             <option value="18001-45000">$18,001-$45,000</option>
             <option value="45001-80000">$45,001-$80,000</option>
@@ -59,6 +61,7 @@
 
         <label for="position">Your Position:
         <select id="position" name="position">
+            <option value="" selected disabled>Select an Option</option>
             <option value="Board">Board of Directors</option>
             <option value="Executive">Executive Team (C-Suite)</option>
             <option value="Senior">Senior Management</option
@@ -83,19 +86,22 @@
         </label>
 
         <div class="recomendation">
-        <p> Would you recomend your workplace to somebody else?</p>
-        <label for="Definetley"> 
-            <input type="radio" id="definetley" name="definetley" value="no">
-            Definetley
-        </label>
-        <label for="not-sure"> 
-            <input type="radio" id="not-sure" name="not sure" value="no">
-            Not Sure
-        </label>
-        <label for="no"> 
-            <input type="radio" id="no" name="no" value="no">
-            No
-        </label>
+            <p>Would you recommend your workplace to somebody else?</p>
+            
+            <label for="definitely"> 
+                <input type="radio" id="definitely" name="recommendation" value="definitely" required>
+                Definitely
+            </label>
+            
+            <label for="not-sure"> 
+                <input type="radio" id="not-sure" name="recommendation" value="not-sure" required>
+                Not Sure
+            </label>
+            
+            <label for="no"> 
+                <input type="radio" id="no" name="recommendation" value="no" required>
+                No
+            </label>
         </div>
 
         <div class="suggestions">
